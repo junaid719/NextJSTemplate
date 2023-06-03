@@ -21,7 +21,6 @@ export default function Sidebar() {
 
             <Link legacyBehavior href={`/`}>
               <a
-                href={`/`}
                 className="md:block text-left md:pb-2 text-white opacity-50 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
               >
                 Home
@@ -66,9 +65,9 @@ export default function Sidebar() {
             </form>
             <ul className="md:flex-col md:min-w-full flex flex-col list-none">
               <li className="items-center">
-                <Link legacyBehavior href={`/dashboard`}>
+                <Link legacyBehavior href="/dashboard">
                   <a
-                    href={`/dashboard`}
+
                     className="md:block text-left md:pb-2 text-white opacity-50 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
                   >
                     Dashboard
@@ -81,9 +80,9 @@ export default function Sidebar() {
 
             <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
               <li className="items-center">
-                <Link legacyBehavior href={`/form`}>
+                <Link legacyBehavior href="/form">
                   <a
-                    href={`/form`}
+
                     className="md:block text-left md:pb-2 text-white opacity-50 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
                   >
                     Form
@@ -92,15 +91,6 @@ export default function Sidebar() {
               </li>
             </ul>
             <hr className="my-4 md:min-w-full" />
-            <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
-              <li className="items-center">
-                <Link legacyBehavior key='signOut' onClick={() => signOut()}>
-
-                  Sign out
-
-                </Link>
-              </li>
-            </ul>
           </div>
         </div>
       </nav>
