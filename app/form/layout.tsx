@@ -1,7 +1,5 @@
 import '../globals.css'
-import { Inter } from 'next/font/google'
 import Sidebar from "../components/Sidebar/Sidebar"
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
     title: 'Create Next App',
