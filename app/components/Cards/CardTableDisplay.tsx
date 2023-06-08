@@ -13,7 +13,7 @@ interface Product {
 }
 export default function CardSocialTraffic() {
   const tableData = useCustomTableData(useContext(Context))
-  console.log('HERE is the data 5', tableData)
+
   return (
     <>
       <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">

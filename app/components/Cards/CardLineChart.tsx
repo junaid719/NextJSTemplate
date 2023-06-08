@@ -8,8 +8,6 @@ import useCategoryCounts from '@/app/hooks/useCustomChartData';
 const ChartLine = (): JSX.Element => {
   const ref = useRef();
   const categoryCounts = useCategoryCounts(useContext(Context))
-  console.log('HERE is the data 2', useContext(Context))
-  console.log('HERE is the data 3', categoryCounts)
   const data = {
     labels: categoryCounts.category,
     datasets: [
