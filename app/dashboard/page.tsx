@@ -15,9 +15,6 @@ export default function Dashboard() {
     useEffect(() => {
         fetch('https://dummyjson.com/products').then(res => res.json()).then(res => setProducts(res.products)).catch(error => console.log(error))
     }, [])
-
-    console.log("HERE is the data 1", products)
-
     return (
         <Context.Provider value={products}>
             <div className="flex flex-wrap place-content-center w-full container m-auto mt-5">
