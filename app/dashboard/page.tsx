@@ -13,7 +13,7 @@ import Container from "../components/RatingStars/index";
 export default function Dashboard() {
     const [products, setProducts] = useState([])
     useEffect(() => {
-        fetch('https://dummyjson.com/products').then(res => res.json()).then(res => setProducts(res.products)).catch(error => console.log(error))
+        fetch('https://dummyjson.com/products').then(res => res.json()).then(res => setProducts(res.products))
     }, [])
     return (
         <Context.Provider value={products}>
