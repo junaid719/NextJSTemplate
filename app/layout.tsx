@@ -3,7 +3,7 @@ import { headers } from 'next/headers'
 import AuthContext from './AuthContext';
 
 async function getSession(cookie: string): Promise<Session> {
-  const response = await fetch('http://localhost:3000/api/auth/session', {
+  const response = await fetch(`${process.env.LOCAL_AUTH_URL}/api/auth/session`, {
     headers: {
       cookie,
     },
